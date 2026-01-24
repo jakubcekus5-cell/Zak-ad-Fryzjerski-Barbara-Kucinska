@@ -1,142 +1,162 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>zaklad-fyzjerski-barbara-kucinska</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f9;
-  color: #222;
-}
-header {
-  background: #1e88e5;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-nav {
-  background: #1565c0;
-  padding: 10px;
-  text-align: center;
-}
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-section {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
-}
-h2 {
-  color: #1e88e5;
-}
-button {
-  background: #1e88e5;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-footer {
-  background: #1565c0;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-input, select {
-  padding: 8px;
-  width: 100%;
-  max-width: 400px;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>zaklad-fyzjerski-barbara-kucinska</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0d47a1; /* prestiżowy niebieski */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #1565c0;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #0d47a1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .service {
+            background: #e3f2fd;
+            padding: 15px;
+            flex: 1 1 200px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .service h3 {
+            margin-top: 0;
+            color: #0d47a1;
+        }
+        .price {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-  <h1 id="firma"></h1>
+    <h1>zaklad-fyzjerski-barbara-kucinska</h1>
+    <p>tradycyjny zakład  fryzjerski</p>
 </header>
 
 <nav>
-  <a href="#onas">O nas</a>
-  <a href="#cennik">Cennik</a>
-  <a href="#kontakt">Kontakt</a>
+    <a href="#o-nas">O nas</a>
+    <a href="#oferta">Oferta / Cennik</a>
+    <a href="#kontakt">Kontakt</a>
 </nav>
 
-<section id="onas">
-  <h2>O nas</h2>
-  <p>tradycyjny zakład fryzjerski. Zapraszamy!</p>
+<section id="o-nas">
+    <h2>O nas</h2>
+    <p>
+        Salon fryzjerski z tradycjami działa od 1944r.
+        Szkolimy uczniuw.
+    </p>
 </section>
 
-<section id="cennik">
-  <h2>Cennik</h2>
-  <ul>
-    <li>Strzyżenie męskie – 40 zł</li>
-    <li>Strzyżenie damskie – 60 zł</li>
-    <li>Koloryzacja – od 120 zł</li>
-    <li>Modelowanie – 50 zł</li>
-  </ul>
+<section id="oferta">
+    <h2>Oferta / Cennik</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Strzyżenie męskie</h3>
+            <div class="price">40 zł</div>
+        </div>
+        <div class="service">
+            <h3>Strzyżenie damskie</h3>
+            <div class="price">60 zł</div>
+        </div>
+        <div class="service">
+            <h3>Koloryzacja</h3>
+            <div class="price">od 120 zł</div>
+        </div>
+        <div class="service">
+            <h3>Stylizacja</h3>
+            <div class="price">50 zł</div>
+        </div>
+    </div>
+    <a class="btn" href="#kontakt">Skontaktuj się</a>
 </section>
 
 <section id="kontakt">
-  <h2>Kontakt</h2>
-  <p>Zamów wizytę przez telefon: <strong><a id="telLink"></a></strong></p>
-  <p>Facebook: <a id="fbLink" target="_blank"></a></p>
-  <p>Godziny otwarcia: <span id="godz"></span></p>
+    <h2>Kontakt</h2>
+    <p>Email: <a href="mailto:kontakt@barbarakucinska.pl">kontakt@barbarakucinska.pl</a></p>
+    <p>Telefon: <a href="tel:3229703333">32 297 03 33</a></p>
+    <p>Adres: Kierocińskiej 20, Sosnowiec, Poland, 41-200</p>
+    <p>Facebook: <a href="https://www.facebook.com/profile.php?id=1014888937058971" target="_blank">Zakład fryzjerski Barbara Kucińska</a></p>
+    <p>Godziny otwarcia: Pon–Pt 10:00–18:00 | Sob 9:00–13:00</p>
 
-  <h3>Umów wizytę</h3>
-  <form onsubmit="return false;">
-    <p><input type="text" placeholder="Imię"></p>
-    <p><input type="tel" placeholder="Telefon"></p>
-    <p>
-      <select>
-        <option>Strzyżenie męskie</option>
-        <option>Strzyżenie damskie</option>
-        <option>Koloryzacja</option>
-        <option>Modelowanie</option>
-      </select>
-    </p>
-    <p><input type="date"></p>
-    <p><input type="time"></p>
-    <p><button>Wyślij zgłoszenie</button></p>
-    <small>* Potwierdzenie wizyty telefonicznie</small>
-  </form>
+    <h3>Umów wizytę</h3>
+    <form onsubmit="return false;">
+        <input type="text" placeholder="Imię">
+        <input type="tel" placeholder="Telefon">
+        <select>
+            <option>Strzyżenie męskie</option>
+            <option>Strzyżenie damskie</option>
+            <option>Koloryzacja</option>
+            <option>Stylizacja</option>
+        </select>
+        <input type="date">
+        <input type="time">
+        <button type="submit">Wyślij zgłoszenie</button>
+        <small>* Potwierdzenie wizyty telefonicznie</small>
+    </form>
+
     <h3>Jak do nas trafić</h3>
-
-<iframe
-  src="https://www.google.com/maps?q=Kierocinska+20+Sosnowiec+41-200+Poland&z=16&output=embed"
-  width="100%"
-  height="300"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy">
-</iframe>
-    
+    <iframe
+        src="https://www.google.com/maps?q=Zakład+fryzjerski+Barbara+Kucińska+Kierocińskiej+20+Sosnowiec+41-200+Poland&z=16&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
 </section>
 
-<footer id="stopka"></footer>
-
-<script>
-const nazwaFirmy = "zaklad-fyzjerski-barbara-kucinska";
-const telefon = "32 297 03 33";
-const facebook = "Zakład fryzjerski Barbara Kucińska";
-const godziny = "Pon–Pt 10:00–18:00 | Sob 9:00–13:00";
-
-document.getElementById("firma").innerText = nazwaFirmy;
-document.getElementById("telLink").innerText = telefon;
-document.getElementById("telLink").href = "tel:" + telefon.replace(/ /g, "");
-document.getElementById("fbLink").innerText = facebook;
-document.getElementById("fbLink").href = "https://" + facebook;
-document.getElementById("godz").innerText = godziny;
-document.getElementById("stopka").innerText = "© 2026 " + nazwaFirmy;
-</script>
+<footer>
+    <p>© 2026 zaklad-fyzjerski-barbara-kucinska</p>
+</footer>
 
 </body>
 </html>
